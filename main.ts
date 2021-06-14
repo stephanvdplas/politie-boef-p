@@ -22,6 +22,7 @@ politie.turn(Direction.Left, 90)
 basic.forever(function () {
     if (politie.isTouching(boef)) {
         basic.showString("Jij wint!")
+        radio.sendNumber(35)
     }
     basic.pause(100)
     tijd += -1
