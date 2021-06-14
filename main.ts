@@ -1,6 +1,6 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    boef.set(LedSpriteProperty.X, receivedNumber / 4)
-    boef.set(LedSpriteProperty.Y, receivedNumber % 4)
+    boef.set(LedSpriteProperty.Y, receivedNumber / 5)
+    boef.set(LedSpriteProperty.X, receivedNumber % 5)
 })
 input.onButtonPressed(Button.A, function () {
     politie.turn(Direction.Left, 90)
