@@ -20,7 +20,7 @@ boef = game.createSprite(0, 0)
 politie = game.createSprite(4, 4)
 politie.turn(Direction.Left, 90)
 basic.forever(function () {
-    if (politie.get(LedSpriteProperty.X) == boef.get(LedSpriteProperty.X) && politie.get(LedSpriteProperty.Y) == boef.get(LedSpriteProperty.Y)) {
+    if (politie.isTouching(boef)) {
         radio.sendNumber(35)
         basic.showString("Jij wint!")
     }
